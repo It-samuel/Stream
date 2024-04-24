@@ -13,10 +13,10 @@ export default function LoginScreen() {
       <View style={styles.loginCard}>
         <View>
         <Text style={styles.text}>Gmail</Text>
-        <TextInput placeholder="Email" style={styles.inputs} />
+        <TextInput placeholder="Email" style={styles.inputs} keyboardType='email-address' />
 
         <Text style={styles.text1}>Password</Text>
-        <TextInput placeholder="Password" style={styles.inputs} />
+        <TextInput placeholder="Password" style={styles.inputs} secureTextEntry={true}/>
         
         <TouchableOpacity style={{alignSelf:'flex-end', marginRight:25, marginTop:20}} onPress={()=>alert('Forgot Password?')}>
         <Text style={{fontWeight:'bold'}}>Forgot password</Text>
@@ -74,14 +74,14 @@ const styles = StyleSheet.create({
     borderTopRightRadius:40
   },
   text:{
-    fontSize:18,
+    fontSize:16,
     color:'#e99601',
     margin:20,
     marginTop:70,
     marginBottom:0
   },
   text1:{
-    fontSize:18,
+    fontSize:16,
     color:'#e99601',
     margin:20,
     marginBottom:0

@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from '../Stream/Screens/WelcomeScreen'
 import LoginScreen from './Screens/LoginScreen';
+import SignupScreen from './Screens/SignupScreen'
 
 
 
@@ -9,7 +10,7 @@ import LoginScreen from './Screens/LoginScreen';
 export default function App() {
   return (
     <View style={styles.container}>
-      <LoginScreen />
+      <SignupScreen />
       <StatusBar style="auto" />
     </View>
   );
