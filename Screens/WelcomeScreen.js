@@ -18,6 +18,18 @@ export default function WelcomeScreen() {
         </TouchableOpacity>
         </View>
         <Text style={styles.altText}> Login with Social Media</Text>
+        {/* section for connecting with socials */}
+        <View style={{flexDirection:'row', alignItems:'center' ,justifyContent:'center',marginTop:30,}}>
+          <TouchableOpacity >
+          <Image  source={require("../assets/Images/search.png")} style={styles.socials}/>
+          </TouchableOpacity>
+          <TouchableOpacity style={{marginHorizontal:20}}>
+          <Image  source={require("../assets/Images/twitter.png")} style={styles.socials} tintColor='white'/>
+          </TouchableOpacity>
+          <TouchableOpacity>
+          <Image  source={require("../assets/Images/social.png")} style={styles.socials}  />
+          </TouchableOpacity>
+        </View>
       </ImageBackground>
     
   )
@@ -89,5 +101,10 @@ const styles = StyleSheet.create({
     color:'white',
     fontSize:16,
     marginTop:110
-  }
+  },
+  socials:{
+    height:30,
+    width:30,
+    marginLeft:15
+  },
 })

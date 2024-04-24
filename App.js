@@ -10,7 +10,7 @@ import SignupScreen from './Screens/SignupScreen'
 export default function App() {
   return (
     <View style={styles.container}>
-      <SignupScreen />
+      <WelcomeScreen />
       <StatusBar style="auto" />
     </View>
   );
