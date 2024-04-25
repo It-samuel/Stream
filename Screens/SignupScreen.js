@@ -13,7 +13,7 @@ export default function LoginScreen() {
       <View style={styles.loginCard}>
         <View>
         <Text style={styles.text}>Full Name</Text>
-        <TextInput placeholder="Email" style={styles.inputs} />
+        <TextInput placeholder="Enter your full name" style={styles.inputs} />
         
         <Text style={styles.text1}>Gmail</Text>
         <TextInput placeholder="Email" style={styles.inputs} keyboardType='email-address'/>

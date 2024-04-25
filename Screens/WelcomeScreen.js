@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ImageBackground,Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({navigationa}) {
   return (
     
       <ImageBackground source={require("../assets/Images/pexels-shvetsa-4226122.jpg")} style={styles.img}>
@@ -23,9 +23,11 @@ export default function WelcomeScreen() {
           <TouchableOpacity >
           <Image  source={require("../assets/Images/search.png")} style={styles.socials}/>
           </TouchableOpacity>
+
           <TouchableOpacity style={{marginHorizontal:20}}>
           <Image  source={require("../assets/Images/twitter.png")} style={styles.socials} tintColor='white'/>
           </TouchableOpacity>
+
           <TouchableOpacity>
           <Image  source={require("../assets/Images/social.png")} style={styles.socials}  />
           </TouchableOpacity>
