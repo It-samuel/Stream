@@ -1,19 +1,19 @@
 import { StyleSheet, Text, View, ImageBackground,Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-export default function WelcomeScreen({navigationa}) {
+export default function WelcomeScreen({navigation}) {
   return (
-    
+     
       <ImageBackground source={require("../assets/Images/pexels-shvetsa-4226122.jpg")} style={styles.img}>
         <View style={styles.overlay}/>
         <Image source={require("../assets/Images/app_logo-removebg-preview.png")} style={styles.logo} />
         <Text style={styles.text}>Welcome Back</Text>
         <View style={{marginTop:45}}>
-          <TouchableOpacity style={styles.singnInbn}>
+          <TouchableOpacity style={styles.singnInbn} onPress={navigation.navigate('LoginScreen')}>
           <Text style={{fontSize:20, color:'white', fontWeight:'bold'}}>SIGN IN</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.signUpbtn}>
+        <TouchableOpacity style={styles.signUpbtn} onPress={navigation.navigate('SignupScreen')}>
           <Text style={{fontSize:20, color:'white', fontWeight:'bold'}}>SIGN UP</Text>
         </TouchableOpacity>
         </View>
