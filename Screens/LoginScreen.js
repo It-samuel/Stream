@@ -2,6 +2,12 @@ import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, TextInput } 
 import React from 'react'
 
 export default function LoginScreen() {
+
+  const SignIn = () =>{
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [loading, setLoading] = useState(false)
+  }
   return (
     
       <ImageBackground source={require("../assets/Images/pexels-shvetsa-4226122.jpg")} style={styles.img}>
